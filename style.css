@@ -1,0 +1,26 @@
+h1, form{
+    text-align: center;
+    color: black;
+}
+body{
+    background-color: rgb(200, 200, 200);
+    padding:0px;
+    margin:0px;
+}
+#button{
+    text-align: center;
+    align-content: center;
+}
+#navbar{
+    padding:0px;
+    margin:0px;
+    background-color: rgb(150,150,150);
+}
+#navbar > a{
+    padding-top:0px;
+    margin-top:0px;
+    padding-left:15px;
+    padding-right:15px;
+    text-decoration: none;
+    color:black;
+}

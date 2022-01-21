@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Algebra</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="solve.js"></script>
+    </head>
+    <body>
+        <div id="navbar">
+            <a class="navbar-inner" href="/">Home</a>
+            <a class="navbar-inner" href="/3x3.html">3 Variable systems</a>
+        </div>
+        <h1>Algebra Calculator</h1>
+        <form autocomplete="off">
+            <input type="text" name="x1" id="x1">
+            <label for="x1">X</label>
+            <label>&nbsp;+&nbsp;</label>
+            <input type="text" name="x2" id="x2">
+            <label for="x2">Y</label>
+            <label>&nbsp;=&nbsp;</label>
+            <input type="text" name="x" id="x">
+            
+            <br>
+            <input type="text" name="y1" id="y1"> 
+            <label for="y1">X</label>
+            <label>&nbsp;+&nbsp;</label>
+            <input type="text" name="y2" id="y2">
+            <label for="y2">Y</label>
+            <label>&nbsp;=&nbsp;</label>
+            <input type="text" name="y" id="y">
+
+            <br>
+            <br>
+        </form>
+        <div id="button">
+            <button onclick="solve2withinputs()"><img src="Assets/images/solve.svg" id = "solveimg"></button>
+        </div>
+        <h1 id="replaceX"></h1>
+        <h1 id="replaceY"></h1>
+    </body>  
+</html> 
