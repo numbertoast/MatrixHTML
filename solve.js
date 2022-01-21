@@ -19,17 +19,17 @@ function solve2(x,y,x1,x2,y1,y2){
     return(solution);
 }
 function solve2withinputs(){
-    x=parseFloat(document.getElementById("x").value);
-    y=parseFloat(document.getElementById("y").value);
-    x1=parseFloat(document.getElementById("x1").value);
-    x2=parseFloat(document.getElementById("x2").value);
-    y1=parseFloat(document.getElementById("y1").value);
-    y2=parseFloat(document.getElementById("y2").value);
+    x=parseFloat($("#x").val());
+    y=parseFloat($("#y").val());
+    x1=parseFloat($("#x1").val());
+    x2=parseFloat($("#x2").val());
+    y1=parseFloat($("#y1").val());
+    y2=parseFloat($("#y2").val());
     console.log(x,y);
     solution = solve2(x,y,x1,x2,y1,y2);
-    document.getElementById("replaceX").innerHTML = "X = "+solution.x;
-    document.getElementById("replaceY").innerHTML = "Y = "+solution.y;
-    document.getElementById("solveimg").setAttribute("src", "Assets/images/done.svg")
+    $("#replaceX").html("X = "+solution.x);
+    $("#replaceY").html("Y = "+solution.y);
+    $("#solveimg").attr("src", "Assets/images/done.svg")
 }
 function solve3(x,y,z,x1,x2,x3,y1,y2,y3,z1,z2,z3){
   determinant = x1*(y2*z3-y3*z2)-x2*(y1*z3-y3*z1)+x3*(y1*z2-y2*z1);
@@ -44,23 +44,23 @@ function solve3(x,y,z,x1,x2,x3,y1,y2,y3,z1,z2,z3){
   return solution
 }
 function solve3withinputs(){
-    x=parseFloat(document.getElementById("x").value);
-    y=parseFloat(document.getElementById("y").value);
-    z=parseFloat(document.getElementById("z").value);
-    x1=parseFloat(document.getElementById("x1").value);
-    x2=parseFloat(document.getElementById("x2").value);
-    x3=parseFloat(document.getElementById("x3").value)
-    y1=parseFloat(document.getElementById("y1").value);
-    y2=parseFloat(document.getElementById("y2").value);
-    y3=parseFloat(document.getElementById("y3").value);
-    z1=parseFloat(document.getElementById("z1").value);
-    z2=parseFloat(document.getElementById("z2").value);
-    z3=parseFloat(document.getElementById("z3").value);
+    x=parseFloat($("#x").val());
+    y=parseFloat($("#y").val());
+    z=parseFloat($("#z").val());
+    x1=parseFloat($("#x1").val());
+    x2=parseFloat($("#x2").val());
+    x3=parseFloat($("#x3").val())
+    y1=parseFloat($("#y1").val());
+    y2=parseFloat($("#y2").val());
+    y3=parseFloat($("#y3").val());
+    z1=parseFloat($("#z1").val());
+    z2=parseFloat($("#z2").val());
+    z3=parseFloat($("#z3").val());
 
     console.log(x,y,z);
     solution = solve3(x,y,z,x1,x2,x3,y1,y2,y3,z1,z2,z3);
-    document.getElementById("replaceX").innerHTML = "X = "+solution.x;
-    document.getElementById("replaceY").innerHTML = "Y = "+solution.y;
-    document.getElementById("replaceZ").innerHTML = "Z = "+solution.z;
-    document.getElementById("solveimg").setAttribute("src", "Assets/images/done.svg")
+    $("#replaceX").html("X = "+solution.x);
+    $("#replaceY").html("Y = "+solution.y);
+    $("#replaceZ").html("Z = "+solution.z);
+    $("#solveimg").attr("src", "Assets/images/done.svg")
 }
